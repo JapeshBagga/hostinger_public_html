@@ -1,0 +1,8 @@
+.feat .container .row .text-container{
+
+    padding: 30px 19px 60px 19px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 1px 1px 20px #ccc;
+    text-align: center;
+}
+

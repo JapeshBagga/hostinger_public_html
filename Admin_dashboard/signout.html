@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Navigation Bar</title>
+	<link rel="stylesheet" href="css/signout.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+  <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+      }
+        h1 {
+          color: #88B04B;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+<body>
+
+
+<!-- <div class="container">
+  <h1>POPUP LOGIN</h1>
+  <a href="#" class="button" id="signout">Login</a>
+  
+</div> -->
+
+<div class="popup">
+  <div class="popup-content">
+    <img src="images/close.png" alt="close" width="10" class="close">
+   
+   
+     
+      <img src="images/user.png" width="120">
+        <h1>Thank You</h1> 
+        <p>You have Signed out Successfully!</p>
+      </div>
+    
+    
+  </div>
+  
+</div>
+
+<script>
+	
+    document.getElementById("signout").addEventListener("click", function(){
+    document.querySelector(".popup").style.display="flex";
+  });
+
+document.querySelector(".close").addEventListener("click", function(){
+document.querySelector(".popup").style.display="none";
+});
+</script>
+
+</body>
+</html>

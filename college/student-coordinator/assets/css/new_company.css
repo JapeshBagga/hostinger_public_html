@@ -1,0 +1,12 @@
+.newList{
+    width: 60%; 
+    margin-right: auto;
+    margin-left: auto;
+  }
+@media screen and (max-width: 480px) {
+  .newList{
+    width: 95%; 
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
