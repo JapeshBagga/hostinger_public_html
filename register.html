@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobaskit</title>
+    <!--SEO meta tags-->
+    <meta name="keywords" content="keywords" content="#Campus placement #Online Recruitment #Most Trusted #Organised database management system #Software">
+    <meta name="description" content="Designed to give you a faster and smoother experience of campus placement and recruitment.
+    Transforming hectic work load into easily manageable task.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <!--bootstrap css-->
+    <title>Home</title>
+    <!--title-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- aos css file cdn link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+   .company_none{
+      display: none;
+   }
+   small{
+      color:red;
+   }
+</style>
+<body>
+    <!-- <?php  $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+?> -->
+    <!--nav started-->
+    <header>
+        <!-- <?php
+        include 'navigation.php';
+    ?> -->
+    </header>
+    <!--nav ends-->
+    <section class="get-in-touch ">
+        <h1 class="title">Register for Demo</h1>
+        <p class="title1">Please fill the form to get instant demo</p>
+        <form method="POST" action="reg.php" class="contact-form row">
+         <input type="hidden" id="roleNew_id" name="roleNew_id" >
+         <div class="form-field col-lg-12">
+           
+            <input id="usernames" name="name" class="input-text js-input" type="text" >
+            <label class="label" for="name" >Name</label>
+            <small id="usercheck">Name is missing</small>
+         </div>
+         
+            <!-- 1st change -->
+             <div class="form-field col-md-4" style="color: #5543ca;">
+               <input type="radio" id="institute" name="select" value="Institute" onchange="myInstituteFun()" >
+               <label for="institute">Institute</label>
+              
+            </div>
+             <div class="form-field col-md-4" style="color: #5543ca;"> 
+               <input type="radio" id="company" name="select" value="Company" onchange="myCompanyFun()">
+               <label for="company">Company</label>
+             
+            </div>
+            
+           
+             <div class="form-field col-lg-12" id="institute_options" style="color: #5543ca;">
+               <input type="radio" id="student" name="select1" value="Student">
+               <label for="student">Student</label>&nbsp;&nbsp;
+               <input type="radio" id="student_pla_co" name="select1" value="student_placment_coordinator"  >
+               <label for="student_pla_co">Student Placement Coordinator</label>&nbsp;&nbsp;
+               <input type="radio" id="facu_co" name="select1" value="faculty">
+               <label for="facu_co">Faculty Coordinator</label>
+            </div>
+            <div class="form-field col-lg-12" id="company_options" style="color: #5543ca;">
+               <input type="radio" id="recruitor" name="select2" value="Recruitor">
+               <label for="recruitor">Recruitor</label>&nbsp;&nbsp;
+               <input type="radio" id="hr" name="select2" value="HR">
+               <label for="hr">HR Manager</label>
+              
+            </div> 
+            <div class="form-field col-lg-6 " id="institute_options1" >
+               <input id="institutee" name="institute" class="input-text js-input" type="text" >
+               <label class="label" for="institutee">Institute Name</label>
+               <small  id="inscheck">Field is missing</small>
+         
+            </div>
+            <div class="form-field col-lg-6 " id="company_options1" style="color: #5543ca;">
+               <input id="company_name" name="company" class="input-text js-input" type="text" >
+               <label class="label" for="company">Company Name</label>
+            </div>
+           <div class="form-field col-lg-6 ">
+              <input id="email" name="email" class="input-text js-input" type="email" >
+              <label class="label" for="email">E-mail</label>
+              <small  id="emailcheck">Field is missing or incorrect</small>
+              
+           </div>
+         
+           <div class="form-field col-lg-6 ">
+              <input id="phone" name="phone" class="input-text js-input" type="tel" >
+              <label class="label" for="phone">Phone Number</label>
+              <small  id="phonecheck">Field is missing or incorrect</small>
+           </div>
+           
+           <div class="form-field col-lg-12">
+              <input id="location" name="location" class="input-text js-input" type="text" >
+              <label class="label" for="street">Location</label>
+              <small  id="locheck">Field is missing</small>
+           </div>
+
+           <!-- <input type="hidden" name="workingg" value="work" > -->
+           <div class="form-field col-lg-12">
+              
+           </div>
+           <input class="submit-btn" type="submit" name="submit"  value="Submit" id="submitbtn">
+        </form>
+     </section>
+
+    <!--footer -->
+    <?php
+        include 'footer.php';
+    ?>
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        AOS.init({
+        duration: 1000,
+        delay: 400
+        });
+   </script> -->
+
+<script>
+  var modal=document.getElementById("company_display");
+
+  document.getElementById("company_options").style.display="none";
+   document.getElementById("company_options1").style.display="none";
+   document.getElementById("institute_options").style.display="none";
+   document.getElementById("institute_options1").style.display="none";
+   
+function myInstituteFun(val) {
+   document.getElementById("company_options").style.display="none";
+   document.getElementById("company_options1").style.display="none";
+   document.getElementById("institute_options").style.display="block";
+   document.getElementById("institute_options1").style.display="block";
+   document.getElementById("roleNew_id").value = "Institute";
+ }
+
+function myCompanyFun(val) {
+   document.getElementById("institute_options").style.display="none";
+   document.getElementById("institute_options1").style.display="none";
+   document.getElementById("company_options").style.display="block";
+   document.getElementById("company_options1").style.display="block";
+   document.getElementById("roleNew_id").value = "Company";
+   
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+   $('#usercheck').hide();    
+    let usernameError = true;
+    $('#usernames').keyup(function () {
+        validateUsername();
+    });
+      
+    function validateUsername() {
+      let usernameValue = $('#usernames').val();
+      if (usernameValue.length == '') {
+      $('#usercheck').show();
+          usernameError = false;
+          return false;
+      } 
+      else if((usernameValue.length < 3)|| 
+              (usernameValue.length > 15)) {
+          $('#usercheck').show();
+          $('#usercheck').html
+("**length of username must be between 3 and 15");
+          usernameError = false;
+          return false;
+      } 
+      else {
+          $('#usercheck').hide();
+      }
+    }
+
+    //Institute Name
+    $('#inscheck').hide();    
+    let insError = true;
+    $('#institutee').keyup(function () {
+        validateinsname();
+    });
+      
+    function validateinsname() {
+      let insValue = $('#institutee').val();
+      if (insValue.length == '') {
+      $('#inscheck').show();
+          insError = false;
+          return false;
+      } 
+     
+      else {
+          $('#inscheck').hide();
+      }
+    }
+
+    //email
+   //  $("#email").keyup(function(){
+	// 		if(validateEmail()){
+	// 			// if the email is validated
+	// 			// set input email border green
+	// 			$("#email").css("border","2px solid green");
+	// 			// and set label 
+	// 			$("#emailMsg").html("<p class='text-success'>Validated</p>");
+	// 		}else{
+	// 			// if the email is not validated
+	// 			// set border red
+	// 			$("#email").css("border","2px solid red");
+	// 			$("#emailMsg").html("<p class='text-danger'>Un-validated</p>");
+	// 		}
+		
+	// 	});
+   //  function validateEmail(){
+	// 	// get value of input email
+	// 	var email=$("#email").val();
+	// 	// use reular expression
+	// 	 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+	// 	 if(reg.test(email)){
+	// 	 	return true;
+	// 	 }else{
+	// 	 	return false;
+	// 	 }
+   
+
+	// }
+
+   //email
+   $('#emailcheck').hide();    
+    let emailError = true;
+    $('#email').keyup(function () {
+        validateemail();
+    });
+      
+    function validateemail() {
+      let emailValue = $('#email').val();
+      var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+      if ((emailValue.length !== '')&&(reg.test(emailValue))) {
+         $('#emailcheck').hide();
+     
+      } 
+     
+      else {
+         
+          $('#emailcheck').show();
+          emailError = false;
+          return false;
+      }
+    }
+
+   //validate phone number
+   $('#phonecheck').hide();    
+    let phoneError = true;
+    $('#phone').keyup(function () {
+        validatephone();
+    });
+      
+    function validatephone() {
+      let phone = $('#phone').val();
+      var reg = /[1-9]{1}[0-9]{9}/;
+      if ((reg.test(phone)) && (phone.length==10)) {
+      $('#phonecheck').hide();
+        
+      } 
+     
+      else {
+          $('#phonecheck').show();
+          phoneError = false;
+          return false;
+      }
+    }
+
+    //Location
+    $('#locheck').hide();    
+    let loError = true;
+    $('#location').keyup(function () {
+        validateloname();
+    });
+      
+    function validateloname() {
+      let usernameValue = $('#location').val();
+      if (usernameValue.length == '') {
+      $('#locheck').show();
+          loError = false;
+          return false;
+      } 
+     
+      else {
+          $('#locheck').hide();
+      }
+    }
+
+
+
+    //submit
+    $('#submitbtn').click(function () {
+         usernameError=true;
+         insError=true;
+         emailError=true;
+         loError=true;
+         phoneError=true;
+         
+        validateUsername();
+        validateinsname();
+        validateloname();
+        validateemail();
+        validatephone(); 
+
+      //   validateConfirmPasswrd();
+    
+        if ((usernameError == true) && 
+            (insError == true)&&(emailError==true)&&(loError==true)&&(phoneError==true) )
+             {
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+
+         
+   
+});
+
+
+</script>
+
+    <!--css Stylesheet-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!--popper.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--bootstrap.js-->
+
+</body>
+
+</html>
+
+        

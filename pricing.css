@@ -1,0 +1,533 @@
+body{
+    background-color: #fff;
+}
+
+
+.pricing .box {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing .box h3 {
+    font-weight: 400;
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    background: #f8f8f8;
+  }
+  
+  .pricing .box h4 {
+    font-size: 36px;
+    color: #106eea;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .pricing .box h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+  
+  .pricing .box h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .pricing .box ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .pricing .box ul li {
+    padding-bottom: 16px;
+  }
+  
+  .pricing .box ul i {
+    color: #106eea;
+    font-size: 18px;
+    padding-right: 4px;
+  }
+  
+  .pricing .box ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+  
+  .pricing .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .pricing .btn-buy {
+    background: #106eea;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .pricing .btn-buy:hover {
+    background: #3b8af2;
+  }
+  
+  .pricing .featured h3 {
+    color: #fff;
+    background: #106eea;
+  }
+  
+  .pricing .advanced {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #106eea;
+    color: #fff;
+  }
+
+  .marginPricing
+  {
+      margin-top: 10%;
+  }
+
+  .raise:hover,
+.raise:focus {
+  box-shadow: 0 1em 1em -1em var(--hover);
+  transform: translateY(-0.65em);
+}
+
+.pricing .freeHover h3:hover {
+    color: #fff;
+    background: #106eea;
+  }
+
+
+  .pricingTitle2
+  {
+      background-color: #a6d6d6;
+      width: 9%;
+      padding-top: o.5%;
+      margin-left: 45%;
+      margin-bottom: 0.2%;
+      border-radius: 10%;
+  }
+
+  .pricingTitle1
+  {
+       text-align: center;
+       padding: 5%;
+       color: #233e8b;
+       font-weight: 800;
+  }
+
+
+
+
+
+
+  .pricingTitle{
+      font-size: 3rem;
+      font-weight: 550;
+      color: #21094e;
+      padding-top: 3%;
+      margin-left: 32%;
+      margin-bottom: 7%;
+  }
+
+  @media screen and (max-width: 790px) {
+    .pricingTitle{
+        font-size: 2rem;
+        padding-top: 18%;
+        margin-left: 33%;
+        margin-bottom: 7%;
+    }
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 15%;
+        background-color: #a6d6d6;
+        width: 20%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+  }
+
+
+  @media screen and (max-width: 545px) {
+    .pricingTitle{
+        font-size: 2rem;
+        padding-top: 27%;
+        margin-left: 20%;
+        margin-bottom: 7%;
+    }
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 16%;
+        background-color: #a6d6d6;
+        width: 20%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+  }
+
+
+
+  @media screen and (max-width: 480px) {
+    .pricingTitle{
+        font-size: 2rem;
+        padding-top: 30%;
+        margin-left: 14%;
+        margin-bottom: 7%;
+    }
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 12%;
+        background-color: #a6d6d6;
+        width: 20%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .pricingTitle{
+        font-size: 2rem;
+        padding-top: 45%;
+        margin-left: 10%;
+        margin-bottom: 7%;
+        width: 90%;
+    }
+
+    
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 15%;
+        left: 1%;
+        background-color: #a6d6d6;
+        width: 20%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+      
+
+
+  }
+
+  @media screen and (max-width: 330px) {
+    .pricingTitle{
+        font-size: 1.7rem;
+        padding-top: 50%;
+        margin-left: 12%;
+        margin-bottom: 7%;
+    }
+
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 16%;
+        background-color: #a6d6d6;
+        width: 27%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+  }
+
+  @media screen and (max-width: 285px) {
+    .pricingTitle{
+        font-size: 1.7rem;
+        padding-top: 65%;
+        margin-left: 12%;
+        margin-bottom: 7%;
+    }
+
+    .pricingTitle2
+    {
+        position: absolute;
+        top: 24%;
+        background-color: #a6d6d6;
+        width: 27%;
+        padding-top: o.5%;
+        margin-left: 40%;
+        margin-bottom: 0.2%;
+        border-radius: 10%;
+    }
+
+    
+  }
+
+
+
+  
+ .buttonClass1{
+  
+     background-color: #e4efe7;
+     border: 2px solid rgb(59,131,119);
+     padding: 1.5% 2.5%;
+     border-radius: 10px 0 0 10px;
+     font-weight: 700;
+     color: rgb(59,131,119);
+     margin-bottom: 5%;
+     
+ }
+ .buttonClass2{
+  
+    background-color: #e4efe7;
+    border: 2px solid rgb(59,131,119);
+    padding: 1.5% 2.5%;
+    border-radius: 0 10px 10px 0;
+    font-weight: 700;
+    color: rgb(59,131,119);
+    margin-bottom: 5%;
+}
+
+ .bt1:hover{
+     background-color: rgb(236,245,244);
+     opacity:0.4;
+     border: 1px solid darkgreen;
+     color: darkgreen;
+ }
+
+
+ .bt2:hover{
+    background-color: rgb(236,245,244);
+    opacity:0.4;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+}
+
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height: 30%;
+  }
+
+  .rowEdit{
+    border: 2px solid gray;
+    height: 30%;
+    width: 40%;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+  }
+
+  .rowEdit1:hover{
+    border: 2px solid rgb(20, 20, 66);
+  }
+
+  .rowEdit2:hover{
+    border: 2.5px solid rgb(2, 37, 2);
+  }
+
+  .dec1{
+    position: absolute;top: 30%;right: 10%;
+  }
+
+  .dec2{
+    position: absolute;top: 30%;left: 10%;
+  }
+ 
+
+  @media screen and (max-width: 550px) {
+    .dec1{
+      position: absolute;top: 65%;left: 10%;
+    }
+  
+    .dec2{
+      position: absolute;top: 1%;left: 10%;
+    } 
+  }
+
+
+
+
+  .conEdit{
+     background-color: #d3f1c3;
+  }
+
+  @media screen and (max-width: 490px) {
+    .rowEdit{
+      border: 2px solid gray;
+      height: 30%;
+      width: 75%;
+      position: absolute;
+      left: 15%;
+      top: 30%;
+    }
+   
+  }
+
+
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .posClass
+  {
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      bottom: 20%;
+  }
+
+  .footerPos{
+      width: 100%;
+      position: absolute;
+      top:94%;
+  }
+
+  @media screen and (max-width: 2600px) {
+    .posClass
+    {
+        width: 85%;
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        bottom: 20%;
+    }
+
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:120%;
+    }
+  }
+
+
+  @media screen and (max-width: 2000px) {
+    .posClass
+    {
+        width: 85%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        bottom: 20%;
+    }
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:90%;
+    }
+  }
+
+  @media screen and (max-width: 1450px) {
+    .posClass
+    {
+        width: 85%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        bottom: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    .posClass
+    {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        bottom: 20%;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:135%;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:250%;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:230%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .footerPos{
+        width: 100%;
+        position: absolute;
+        top:290%;
+    }
+  }
