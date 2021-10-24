@@ -1,0 +1,192 @@
+/* 
+1.Banner
+*/
+
+/* Banner */
+.banner {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background: #fff;
+    
+}
+.banner:before {
+    color: transparent;
+    content: '';
+    position: absolute;
+    height: 200vw;
+    width: 85vw;
+    -webkit-transform: rotateZ(14deg) skewX(0deg) skewY(0deg);
+    -ms-transform: rotateZ(14deg) skewX(0deg) skewY(0deg);
+    transform: rotateZ(14deg) skewX(0deg) skewY(0deg);
+    left: 55.2%;
+    top: -13vw;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    border-radius: 1px;
+    box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+    background: linear-gradient(45deg,#fe9504,#fe9504 50%);
+}
+.bannerOverlay {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner .bannerDesc img {
+    margin-top: 40px;
+}
+.banner .bannerForm h2 {
+    margin: 0 0 18px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.banner .bannerForm p {
+    margin: 0 0 4px;
+    font-weight: 500;
+    color: #2b2b2ba8;
+    font-size: 13px;
+}
+.banner .bannerForm p a {
+    color: #000;
+}
+.banner .bannerForm{
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 7px;
+    text-align: center;
+}
+.banner .bannerForm hr {
+    margin: 25px 0 16px;
+    border-color: #dadada;
+}
+.banner .bannerForm .form-control {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding-left: 0;
+    font-size: 14px;
+    box-shadow: none;
+    background: transparent;
+    border-color: #302e2e;
+}
+.banner .bannerForm .form-control:focus {
+    box-shadow: none;
+    border-color: #302e2e;
+}
+.banner .bannerForm input::placeholder {
+    color: #202020;
+    font-weight: 200;
+}
+.banner .bannerForm .btn {
+    margin: 15px 0 10px;
+    border: 1px solid #000;
+    font-weight: 600;
+    color: #000;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 6px 30px;
+    background: transparent;
+    letter-spacing: 1px;
+    background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.banner .bannerForm .btn:hover {
+    color: #fff;
+    background-position: left;
+}
+.banner .bannerForm .or {
+    margin: 8px 0 10px;
+    font-weight: 800;
+}
+.banner .bannerForm .lw {
+    margin: 0px 0 8px;
+}
+.banner .google {
+    background: #e50000;
+    margin-right: 4px;
+}
+.banner .linkedIn {
+    background: #0164ab;
+    margin-left: 4px;
+}
+.banner .google,
+.banner .linkedIn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    display: inline-block;
+}
+.banner .google img {
+    width: 20px;
+}
+.banner .linkedIn img {
+    width: 16px;
+}
+/* .banner .bannerFormGoogle {
+    background: #e50000;
+    padding: 6px 13px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+    width: 118px;
+    text-align: center;
+}
+.banner .bannerFormFacebook {
+    background: #113d77;
+    padding: 6px 13px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+    width: 118px;
+}
+.banner .bannerFormGoogle .bannerFormGoogleImg,
+.banner .bannerFormFacebook .bannerFormFacebookImg {
+    display: inline-block;
+}
+.banner .bannerFormGoogle .bannerFormGoogleImg img {
+    width: 24px;
+}
+.banner .bannerFormFacebook .bannerFormFacebookImg img {
+    width: 16px;
+}
+.banner .bannerFormGoogle .bannerFormGoogleTxt,
+.banner .bannerFormFacebook .bannerFormFacebookTxt {
+    display: inline-block;
+}
+.banner .bannerFormGoogle .bannerFormGoogleTxt p,
+.banner .bannerFormFacebook .bannerFormFacebookTxt p  {
+    color: #fff;
+    margin-left: 2px;
+} */
+.banner .formBtmDesc {
+    font-weight: 800;
+    margin: 0 auto -76px;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 479px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 991px) {
+    
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    
+}
